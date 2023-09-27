@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./portfolio.css";
 import Menu from "./Menu";
 
 const Portfolio = () => {
-  const [items, setItems] = useState(Menu);
+  const items = Menu;
   return (
     <section className="work container section" id="work">
       <h2 className="section__title"> Recent Works</h2>
@@ -28,7 +28,7 @@ const Portfolio = () => {
 
               <span className="work__category">{category}</span>
               <h3 className="work__title>">{title}</h3>
-              <a href="#" className="work__button">
+              <a className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
